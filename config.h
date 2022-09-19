@@ -91,7 +91,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *firefoxcmd[]  = { "firefox", NULL };
 static const char *dmenukillcmd[]  = { "dmenukill", NULL };
-static const char *xsecurelockcmd[]  = { "xsecurelock", NULL };
+static const char *slockcmd[]  = { "slock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -107,7 +107,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_a,      spawn,          {.v = firefoxcmd } },
 	{ MODKEY,                       XK_x,      spawn,          {.v = dmenukillcmd } },
-	{ MODKEY,                       XK_q,      spawn,          {.v = xsecurelockcmd } },
+	{ MODKEY,                       XK_q,      spawn,          {.v = slockcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_Tab,    shiftview,      {.i = +1 } },
 	{ MODKEY,                       XK_grave,  shiftview,      {.i = -1 } },
